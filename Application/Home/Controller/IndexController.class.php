@@ -6,4 +6,8 @@ class IndexController extends Controller {
 
    		$this->display();
    }
+   public function book(){
+   	//测试
+   		$this->display();
+   }
 }

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>123</title>
+	<script src="//code.jquery.com/jquery-latest.min.js"></script>
+	<script src="//unslider.com/unslider.js"></script>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/style.css">
+</head>
+<style type="text/css">
+	.banner { position: relative; overflow: auto; }
+    .banner li { list-style: none; }
+        .banner ul li { float: left; }
+        .banner ul li img{width:100%;}
+</style>
+<body>
+<div class="banner">
+    <ul>
+        <li><img src="__PUBLIC__/images/1.jpg"></li>
+        <li><img src="__PUBLIC__/images/2.jpg"></li>
+        <li><img src="__PUBLIC__/images/3.jpg"></li>
+    </ul>
+</div>
+</body>
+<script type="text/javascript">
+	$(function(){
+		$('.banner').unslider({
+    speed: 500,               //  滚动速度
+    delay: 3000,              //  动画延迟
+    complete: function() {},  //  动画完成的回调函数
+    keys: true,               //  启动键盘导航
+    dots: true,               //  显示点导航
+    fluid: true              //  支持响应式设计
+});
+	})
+</script>
+</html>

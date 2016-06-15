@@ -11,25 +11,51 @@
  </head>
  <script type="text/javascript" src="__PUBLIC__/unslider/js/unslider-min.js"></script>
  <link rel="stylesheet" type="text/css" href="__PUBLIC__/unslider/css/unslider.css">
- <link rel="stylesheet" type="text/css" href="__PUBLIC__/unslider/css/unslider-dots.css">
+ <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/style.css">
+<!-- <link rel="stylesheet" type="text/css" href="__PUBLIC__/unslider/css/unslider-dots.css">-->
  <style type="text/css">
-	.banner { position: relative; overflow: auto; }
-    .banner li { list-style: none; }
-    .banner ul li { float: left; width: 100%;}
+	
     .banner ul li img {width: 100%}
+    
+	.banner{width: 100%;font-size: 18px;line-height: 24px;text-align: center;}
+	.unslider-nav{font-size: 18px;line-height: 24px;text-align: center; background: red}
+	.unslider-nav ol{position: absolute;left: 0;right: 0;margin-top: -40px;}
+	.unslider-nav ol li {
+			display: inline-block;
+			width: 15px;
+			height: 15px;
+			margin: 0 4px;
+
+			text-indent: -999em;
+
+			border: 2px solid #fff;
+			border-radius: 6px;
+
+			cursor: pointer;
+			opacity: .4;
+
+			-webkit-transition: background .5s, opacity .5s;
+			-moz-transition: background .5s, opacity .5s;
+			transition: background .5s, opacity .5s;
+		}
+		.unslider-active {
+				background: red;
+				opacity: 1;
+		}
+
  </style>
  <body style="height: 10000px">
  		<!--头部导航-->
  		<nav class="navbar navbar-default" role="navigation" style="margin-bottom: 1px;" >
-	 		<div class="container">
+	 		<div class="container" id="b04">
 	 			<div class="navbar-header">
 	 				<a class="navbar-brand">首页</a>
 	 			</div>
 	 			<div>
 	 				<ul class="nav navbar-nav">
 	 					<li class="active"><a href="">导航a</a></li>
-	 					<li><a href="">导航a</a></li>
-	 					<li><a href="">导航a</a></li>
+	 					<li><a href="">导航b</a></li>
+	 					<li><a href="">导航c</a></li>
 	 					
 	 				</ul>
 	 			</div>
@@ -37,7 +63,7 @@
  		</nav>
  		<!--头部导航end-->
  		<!--轮播-->
- 		<div class="">
+ 		
 	 		<div class="banner">
 	 			<ul>
 	 				
@@ -45,34 +71,52 @@
 	 				<li><a href=""><img src="__PUBLIC__/images/2.jpg"></a></li>
 			       	<li><a href=""><img src="__PUBLIC__/images/3.jpg"></a></li>
 	 			</ul>
+	 			
 
 	 		</div>
 	 		
-	 	</div>
+	 
  		<!--轮播end-->
- 	
+
+ 		<!--咨询头条-->
+ 		<div class="container">
+ 			<!--咨询-->
+ 			<div class="zixun">
+ 				zixunzixun
+ 			</div>
+ 			<!--头条-->
+			<div>
+				
+			</div>
+ 		</div>
+ 		<!---->
  </body>
  <script type="text/javascript">
  	$(function() {
    		var unslider = $('.banner').unslider({
-			speed: 500,               //  每个幻灯片的动画速度(毫秒单位)
-			delay: 30000,              //  幻灯片切换  毫秒单位
-			complete: function() {},  //  A function that gets called after every slide animation
-			keys: true,               //  Enable keyboard (left, right) arrow shortcuts
-			dots: true,               //  Display dot navigation
-			fluid: false,              //  Support responsive design. May break non-responsive designs
-			autoplay:true,
-			arrows: false,
-			easing: 'linear',			//swing  linear 2中形式
-  		
-		});
+   			speed: 500,     // 动画过渡的速度(毫秒),如果不需要过渡效果就设置为false  
+            delay: 3000000,    // 每张幻灯片的间隔时间(毫秒), 如果不是自动播放就设置为false  
+            init: 0,        // 初始化延迟时间(毫秒),如果不需要延迟就设置为false  
+           	pause:true,      // 当鼠标指针浮动在当前区域内时是否暂停自动播放  
+          	//loop: !f,       // 是否无尽循环播放  
+            keys: true,        // 是否开启键盘导航  
+           // dots: false,        // 是否显示导航点  
+            arrows: false,      // 是否显示向前和向后的箭头  
+          //  prev: '←',     // 向前按钮中的显示文字(或html片段)  
+          //  next: '→',     // 向后......  
+          //  fluid: f,       // 是否宽度自适应  
+          //  starting: f,    // 在每个动画前调用的函数  
+          //  complete: f,    // 在每个动画之后调用的函数  
+          //  items: '>ul',   // 幻灯片的容器选择器  
+          //  item: '>li',    // 需要滚动的选择器  
+            easing: 'swing',// 动画的缓动函数(easing function)  
+            autoplay: true  // 是否允许自动播放  
+   		});
 
-		$('.unslider-arrow').click(function() {
-        var fn = this.className.split(' ')[1];
+   		//基础模式
+   		//$(".banner").unslider();
 
-        //  Either do unslider.data('unslider').next() or .prev() depending on the className
-        unslider.data('unslider')[fn]();
-    });
+		
 	});
  </script>
  </html>
