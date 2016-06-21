@@ -1,36 +1,547 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>123</title>
-	<script src="//code.jquery.com/jquery-latest.min.js"></script>
-	<script src="//unslider.com/unslider.js"></script>
-	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/style.css">
-</head>
+<include file="Layout/head" title="首页" keywords="keyweords" />
 <style type="text/css">
-	.banner { position: relative; overflow: auto; }
-    .banner li { list-style: none; }
-        .banner ul li { float: left; }
-        .banner ul li img{width:100%;}
+	.navbar{
+		background: url(../images/img1/images/i_main_bg_03.jpg) repeat-x #f3f1f1;
+	}
 </style>
 <body>
-<div class="banner">
-    <ul>
-        <li><img src="__PUBLIC__/images/1.jpg"></li>
-        <li><img src="__PUBLIC__/images/2.jpg"></li>
-        <li><img src="__PUBLIC__/images/3.jpg"></li>
-    </ul>
-</div>
+
+ 	<!-- 顶部栏
+ 	    <div class="navbar navbar-default" style="margin-bottom:0px;border-bottom: 0px;">
+ 	    	网站log
+ 	     	<div class="container">
+ 	     		<a href="">
+ 	     			<div>
+ 	     				
+ 	     			</div>
+ 	     		</a>
+ 	     		
+ 	     	</div>
+ 	    </div> -->
+
+<include file="Layout/header"/>
+	
+	<!--导航栏-->
+    <div class="p_nav_wrap i_nav_wrap">
+    	<div class="p_nav">
+        	<ul class="p_nav_list">
+            	<li><a href="#" class="current">首页</a></li>
+                <li><a href="#">资讯</a></li>
+                <li><a href="#">排行</a></li>
+                <li><a href="#">书库</a></li>
+                <li><a href="#">书单</a></li>
+                <li><a href="#">书架</a></li>
+                <li class="no_bd"><a href="#">会员专区</a></li>
+            </ul>
+            <div class="p_nav_r"><a href="#">网站上线bug反馈</a></div>
+        </div>
+    </div>
+    <!--轮播-->
+    <div class="i_main_wrap">
+    	<div class="p_zone"></div>
+    	<div class="i_main_all">
+        	<div class="i_banner_box">
+            	<a href="#"><img src="__PUBLIC__/images/img1/images/images/i_banner_06.jpg"></a>
+                <div class="prev"></div>
+            	<div class="next"></div>
+            </div>
+        </div>
+        <div class="i_main2_box">
+        	<div class="i_main2_left">
+            	<P class="i_main2_tt">很抱歉，部分动漫作品因政策原因暂时下架调整。维护</P>
+                <P class="i_main2_rd">很抱歉，部分动漫作品因政策原因暂时下架调整。维护</P>
+            </div>
+            <div class="i_main2_right">
+            	<P class="i_main2_p1"><span>【玄幻】</span>无上武道 作者 沧海鲲鹏加入名人堂</P>
+                <P><span>【玄幻】</span>无上武道 作者 沧海鲲鹏加入名人堂</P>
+            </div>
+        </div>
+        <div class="i_main3_box">
+        	<div class="i_main_son1">
+            	<h3>新书<span>自荐</span></h3>
+            	<ul>
+                	<li>
+                    	<div class="i_main3_tu">
+                        	<a href="#"><img src="__PUBLIC__/images/img1/images/images/i_tu5_03.jpg"></a>
+                            <p class="i_main3_fd">
+                                <span></span>
+                                <i>如果你曾经放手，希望你可以在某天重新牵手。致以我...</i>
+                                <b>更新至233章</b>
+                            </p>
+                        </div>
+                        <p class="i_main3_bn"><a href="#">绝世剑神</a></p>
+                        <p class="i_main3_an">东方佛晓</p>
+                    </li>
+                    <li>
+                    	<div class="i_main3_tu">
+                        	<a href="#"><img src="__PUBLIC__/images/img1/images/images/i_tu2_03.jpg"></a>
+                            <p class="i_main3_fd">
+                                <span></span>
+                                <i>如果你曾经放手，希望你可以在某天重新牵手。致以我...</i>
+                                <b>更新至233章</b>
+                            </p>
+                        </div>
+                        <p class="i_main3_bn"><a href="#">绝世剑神</a></p>
+                        <p class="i_main3_an">东方佛晓</p>
+                    </li>
+                    <li>
+                    	<div class="i_main3_tu">
+                        	<a href="#"><img src="__PUBLIC__/images/img1/images/images/i_tu3_03.jpg"></a>
+                            <p class="i_main3_fd">
+                                <span></span>
+                                <i>如果你曾经放手，希望你可以在某天重新牵手。致以我...</i>
+                                <b>更新至233章</b>
+                            </p>
+                        </div>
+                        <p class="i_main3_bn"><a href="#">绝世剑神</a></p>
+                        <p class="i_main3_an">东方佛晓</p>
+                    </li>
+                    <li>
+                    	<div class="i_main3_tu">
+                        	<a href="#"><img src="__PUBLIC__/images/img1/images/images/i_tu4_03.jpg"></a>
+                            <p class="i_main3_fd">
+                                <span></span>
+                                <i>如果你曾经放手，希望你可以在某天重新牵手。致以我...</i>
+                                <b>更新至233章</b>
+                            </p>
+                        </div>
+                        <p class="i_main3_bn"><a href="#">绝世剑神</a></p>
+                        <p class="i_main3_an">东方佛晓</p>
+                    </li>
+                    <li>
+                    	<div class="i_main3_tu">
+                        	<a href="#"><img src="__PUBLIC__/images/img1/images/images/i_tu1_03.png"></a>
+                            <p class="i_main3_fd">
+                                <span></span>
+                                <i>如果你曾经放手，希望你可以在某天重新牵手。致以我...</i>
+                                <b>更新至233章</b>
+                            </p>
+                        </div>
+                        <p class="i_main3_bn"><a href="#">绝世剑神</a></p>
+                        <p class="i_main3_an">东方佛晓</p>
+                    </li>
+                    <li class="i_main3_nomar">
+                    	<div class="i_main3_tu">
+                        	<a href="#"><img src="__PUBLIC__/images/img1/images/images/i_tu3_03.jpg"></a>
+                            <p class="i_main3_fd">
+                                <span></span>
+                                <i>如果你曾经放手，希望你可以在某天重新牵手。致以我...</i>
+                                <b>更新至233章</b>
+                            </p>
+                        </div>
+                        <p class="i_main3_bn"><a href="#">绝世剑神</a></p>
+                        <p class="i_main3_an">东方佛晓</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="i_main_shadow_l"></div>
+            <div class="i_main_shadow_r"></div>
+        </div>
+        <div class="i_main4_box">
+        	<div class="i_main4_left">
+            	<h3 class="i_main4_gy">创别<span>精品</span><a href="#">更多》</a></h3>
+            	<dl>
+                	<dt><a href="#"><img src="__PUBLIC__/images/img1/images/images/i_photo_03.png"></a></dt>
+                    <dd>
+                    	<p><a href="#" class="i_dzs">斗战神</a></p>
+                        <p class="i_lqy">恋情衣</p>
+                        <p class="i_cont"><a href="#">天道至高，天心难测！ 一个起于世俗的卑微少年，以一块惊世魔碑，走上通神之路，要以我道衍天道，要以我心证天心！</a></p>
+                        <a href="#" class="i_main4_a1"><img src="__PUBLIC__/images/img1/images/images/i_photo1_06.jpg"></a><a href="#" class="i_main4_a1"><img src="__PUBLIC__/images/img1/images/images/i_photo2_06.jpg"></a><a href="#" class="i_main4_a1"><img src="__PUBLIC__/images/img1/images/images/i_photo1_06.jpg"></a>
+                    </dd>
+                </dl>
+            </div>
+            <div class="i_main4_right">
+            	<h3 class="i_main4_gy i_main4_gy1">畅销<span>排行</span><a href="#" class="i_bd"><img src="__PUBLIC__/images/img1/images/images/i_bd2_03.jpg"></a><a href="#" class="i_bd"><img src="__PUBLIC__/images/img1/images/images/i_bd1_03.jpg"></a><a href="#" class="i_bd"><img src="__PUBLIC__/images/img1/images/images/i_bd_03.jpg"></a></h3>
+                <ul>
+                	<li><span class="i_main4_jvse">1</span><a href="#">斗仙大罗三代</a><b>月下白衣飘</b></li>
+                    <li><span class="i_main4_jvse">2</span><a href="#">斗仙大罗三代</a><b>月下白衣飘</b></li>
+                    <li><span class="i_main4_jvse">3</span><a href="#">斗仙大罗三代</a><b>月下白衣飘</b></li>
+                    <li><span>4</span><a href="#">斗仙大罗三代</a><b>月下白衣飘</b></li>
+                    <li><span>5</span><a href="#">斗仙大罗三代</a><b>月下白衣飘</b></li>
+                    <li><span>6</span><a href="#">斗仙大罗三代</a><b>月下白衣飘</b></li>
+                    <li class="i_more"><a href="#">更多》</a></li>
+                </ul>
+            </div>
+            <div class="i_main_shadow_left"></div>
+            <div class="i_main_shadow_right"></div>
+        </div>
+        <div class="i_main5_all">
+            <div class="i_main5_box">
+                <div class="i_main5_son2"><a href="#"><img src="__PUBLIC__/images/img1/images/images/i_banner2_03.jpg"></a><a href="#"><img src="__PUBLIC__/images/img1/images/images/i_banner1_03.jpg"></a><a href="#"><img src="__PUBLIC__/images/img1/images/images/i_banner2_03.jpg"></a><a href="#" class="i_main5_nomar"><img src="__PUBLIC__/images/img1/images/images/i_banner1_03.jpg"></a></div>
+            </div>
+            <div class="i_main5_left"></div>
+            <div class="i_main5_right"></div>
+        </div>
+        <div class="i_main6_box">
+        	<div class="i_main6_left">
+            	<h3 class="i_main4_gy">更新<span>达人</span></h3>
+            	<ul>
+                	<li>
+                    	<a href="#"><img src="__PUBLIC__/images/img1/images/images/i_main6_tu1_03.jpg"></a>
+                        <p class="i_sm"><a href="#">武逆九天</a></p>
+                        <p>小龙卷风</p>
+                        <p class="i_pm"></p>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="__PUBLIC__/images/img1/images/images/i_main6_tu1_03.jpg"></a>
+                        <p class="i_sm"><a href="#">武逆九天</a></p>
+                        <p>小龙卷风</p>
+                        <p class="i_pm2"></p>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="__PUBLIC__/images/img1/images/images/i_main6_tu1_03.jpg"></a>
+                        <p class="i_sm"><a href="#">武逆九天</a></p>
+                        <p>小龙卷风</p>
+                        <p class="i_pm3"></p>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="__PUBLIC__/images/img1/images/images/i_main6_tu1_03.jpg"></a>
+                        <p class="i_sm"><a href="#">武逆九天</a></p>
+                        <p>小龙卷风</p>
+                        <p class="i_pm4"></p>
+                    </li>
+                </ul>
+            </div>
+            <div class="i_main6_right">
+            	<h3 class="i_main4_gy i_main6_gy">土豪榜<a href="#">更多》</a></h3>
+                <div class="i_main6_ll">
+                	<a href="#" class="i_main6_tu"><img src="__PUBLIC__/images/img1/images/images/p_main6_tu1_03.jpg"></a>
+                    <p><a href="#">土豪榜规则</a></p>
+                    <p><a href="#">如何获得土豪票</a></p>
+                    <p><a href="#">土豪榜规则</a></p>
+                    <p><a href="#">如何获得土豪票</a></p>
+                </div>
+                <div class="i_main6_rr">
+                	<p><b><img src="__PUBLIC__/images/img1/images/images/i_num1_03.jpg"></b><a href="#">斗仙大罗异世之争霸天下</a><span>235467</span></p>
+                    <p><b><img src="__PUBLIC__/images/img1/images/images/i_num2_03.jpg"></b><a href="#">斗仙大罗异世之争霸天下</a><span>235467</span></p>
+                    <p><b><img src="__PUBLIC__/images/img1/images/images/i_num3_03.jpg"></b><a href="#">斗仙大罗异世之争霸天下</a><span>235467</span></p>
+                    <p><b><img src="__PUBLIC__/images/img1/images/images/i_num4_03.jpg"></b><a href="#">斗仙大罗异世之争霸天下</a><span>235467</span></p>
+                    <p><b><img src="__PUBLIC__/images/img1/images/images/i_num5_03.jpg"></b><a href="#">斗仙大罗异世之争霸天下</a><span>235467</span></p>
+                    <p><b><img src="__PUBLIC__/images/img1/images/images/i_num6_03.jpg"></b><a href="#">斗仙大罗异世之争霸天下</a><span>235467</span></p>
+                </div>
+            </div>
+        	<div class="i_main_shadow_left"></div>
+            <div class="i_main_shadow_right"></div>
+        </div>
+        
+        <div class="i_main3_box i_main7_box">
+        	<div class="i_main_son1">
+            	<h3>直通<span>首页</span><a href="#">更多》</a></h3>
+            	<ul>
+                	<li>
+                    	<div class="i_main3_tu">
+                        	<a href="#"><img src="__PUBLIC__/images/img1/images/images/i_tu5_03.jpg"></a>
+                            <p class="i_main3_fd">
+                                <span></span>
+                                <i>如果你曾经放手，希望你可以在某天重新牵手。致以我...</i>
+                                <b>更新至233章</b>
+                            </p>
+                        </div>
+                        <p class="i_main7_ps">1124452票</p>
+                        <p class="i_main3_bn"><a href="#">绝世剑神</a></p>
+                        <p class="i_main3_an">东方佛晓</p>
+                    </li>
+                    <li>
+                    	<div class="i_main3_tu">
+                        	<a href="#"><img src="__PUBLIC__/images/img1/images/images/i_tu2_03.jpg"></a>
+                            <p class="i_main3_fd">
+                                <span></span>
+                                <i>如果你曾经放手，希望你可以在某天重新牵手。致以我...</i>
+                                <b>更新至233章</b>
+                            </p>
+                        </div>
+                        <p class="i_main7_ps2">1124452票</p>
+                        <p class="i_main3_bn"><a href="#">绝世剑神</a></p>
+                        <p class="i_main3_an">东方佛晓</p>
+                    </li>
+                    <li>
+                    	<div class="i_main3_tu">
+                        	<a href="#"><img src="__PUBLIC__/images/img1/images/images/i_tu3_03.jpg"></a>
+                            <p class="i_main3_fd">
+                                <span></span>
+                                <i>如果你曾经放手，希望你可以在某天重新牵手。致以我...</i>
+                                <b>更新至233章</b>
+                            </p>
+                        </div>
+                        <p class="i_main7_ps3">1124452票</p>
+                        <p class="i_main3_bn"><a href="#">绝世剑神</a></p>
+                        <p class="i_main3_an">东方佛晓</p>
+                    </li>
+                    <li>
+                    	<div class="i_main3_tu">
+                        	<a href="#"><img src="__PUBLIC__/images/img1/images/images/i_tu4_03.jpg"></a>
+                            <p class="i_main3_fd">
+                                <span></span>
+                                <i>如果你曾经放手，希望你可以在某天重新牵手。致以我...</i>
+                                <b>更新至233章</b>
+                            </p>
+                        </div>
+                        <p class="i_main7_ps2">1124452票</p>
+                        <p class="i_main3_bn"><a href="#">绝世剑神</a></p>
+                        <p class="i_main3_an">东方佛晓</p>
+                    </li>
+                    <li>
+                    	<div class="i_main3_tu">
+                        	<a href="#"><img src="__PUBLIC__/images/img1/images/images/i_tu1_03.png"></a>
+                            <p class="i_main3_fd">
+                                <span></span>
+                                <i>如果你曾经放手，希望你可以在某天重新牵手。致以我...</i>
+                                <b>更新至233章</b>
+                            </p>
+                        </div>
+                        <p class="i_main7_ps3">1124452票</p>
+                        <p class="i_main3_bn"><a href="#">绝世剑神</a></p>
+                        <p class="i_main3_an">东方佛晓</p>
+                    </li>
+                    <li class="i_main3_nomar">
+                    	<div class="i_main3_tu">
+                        	<a href="#"><img src="__PUBLIC__/images/img1/images/images/i_tu3_03.jpg"></a>
+                            <p class="i_main3_fd">
+                                <span></span>
+                                <i>如果你曾经放手，希望你可以在某天重新牵手。致以我...</i>
+                                <b>更新至233章</b>
+                            </p>
+                        </div>
+                        <p class="i_main7_ps">1124452票</p>
+                        <p class="i_main3_bn"><a href="#">绝世剑神</a></p>
+                        <p class="i_main3_an">东方佛晓</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="i_main_shadow_l"></div>
+            <div class="i_main_shadow_r"></div>
+        </div>
+        
+        
+        <div class="i_main3_box i_main7_box">
+        	<div class="i_main_son1">
+            	<h3>签约<span>作品</span><a href="#">更多》</a></h3>
+            	<dl class="i_main7_list">
+                	<dt><a href="#"><img src="__PUBLIC__/images/img1/images/images/i_main7_tu_03.jpg"></a></dt>
+                    <dd>
+                    	<p class="i_main7_sm"><a href="#">斗战神</a></p>
+                        <p class="i_main7_zz">恋情已</p>
+                        <p class="i_main7_nr"><a href="#">天道至高，天心难测！ 一个起于世俗的卑微少年，以一块天道至高，天心难测！ 一个起于世俗的卑微少年，以一块惊世魔碑，走上通神之路，要以我道衍天道，要以我心证天心！惊世魔碑，走上通神之路，要以我道衍天道，要以我心证天心！</a></p>
+                        <p class="i_main7_slt"><a href="#"><img src="__PUBLIC__/images/img1/images/images/i_main7_tu1_03.jpg">斗战神</a></p>
+                        <p class="i_main7_slt"><a href="#"><img src="__PUBLIC__/images/img1/images/images/i_main7_tu2_03.jpg">斗战神</a></p>
+                        <p class="i_main7_slt"><a href="#"><img src="__PUBLIC__/images/img1/images/images/i_main7_tu3_03.jpg">斗战神</a></p>
+                        <p class="i_main7_slt"><a href="#"><img src="__PUBLIC__/images/img1/images/images/i_main7_tu4_03.jpg">斗战神</a></p>
+                        <p class="i_main7_slt"><a href="#"><img src="__PUBLIC__/images/img1/images/images/i_main7_tu2_03.jpg">斗战神</a></p>
+                        <p class="i_main7_slt"><a href="#"><img src="__PUBLIC__/images/img1/images/images/i_main7_tu4_03.jpg">斗战神</a></p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="i_main_shadow_l"></div>
+            <div class="i_main_shadow_r"></div>
+        </div>
+        
+        
+            <div class="i_main6_box i_main8_box">
+        	<div class="i_main6_left i_main8_left">
+            	<h3 class="i_main4_gy">最新<span>免费</span><a href="#">更多》</a></h3>
+            	<ul>
+                	<li>
+                    	<a href="#"><img src="__PUBLIC__/images/img1/images/images/i_main8_tu1_03.jpg"></a>
+                        <p class="i_sm"><a href="#">武逆九天武逆九天武逆九天</a></p>
+                        <p>小龙卷风</p>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="__PUBLIC__/images/img1/images/images/i_main8_tu2_03.jpg"></a>
+                        <p class="i_sm"><a href="#">武逆九天</a></p>
+                        <p>小龙卷风</p>
+  
+                    </li>
+                    <li>
+                    	<a href="#"><img src="__PUBLIC__/images/img1/images/images/i_main8_tu1_03.jpg"></a>
+                        <p class="i_sm"><a href="#">武逆九天</a></p>
+                        <p>小龙卷风</p>
+            
+                    </li>
+                    <li>
+                    	<a href="#"><img src="__PUBLIC__/images/img1/images/images/i_main8_tu2_03.jpg"></a>
+                        <p class="i_sm"><a href="#">武逆九天</a></p>
+                        <p>小龙卷风</p>
+            
+                    </li>
+                </ul>
+            </div>
+            <div class="i_main6_right i_main8_right">
+            	<h3 class="i_main4_gy">完本<span>推荐</span><a href="#">更多》</a></h3>
+            	<ul>
+                	<li>
+                    	<a href="#"><img src="__PUBLIC__/images/img1/images/images/i_main8_tu1_03.jpg"></a>
+                        <p class="i_sm"><a href="#">武逆九天武逆九天武逆九天</a></p>
+                        <p>小龙卷风</p>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="__PUBLIC__/images/img1/images/images/i_main8_tu2_03.jpg"></a>
+                        <p class="i_sm"><a href="#">武逆九天</a></p>
+                        <p>小龙卷风</p>
+  
+                    </li>
+                    <li>
+                    	<a href="#"><img src="__PUBLIC__/images/img1/images/images/i_main8_tu1_03.jpg"></a>
+                        <p class="i_sm"><a href="#">武逆九天</a></p>
+                        <p>小龙卷风</p>
+            
+                    </li>
+                    <li>
+                    	<a href="#"><img src="__PUBLIC__/images/img1/images/images/i_main8_tu2_03.jpg"></a>
+                        <p class="i_sm"><a href="#">武逆九天</a></p>
+                        <p>小龙卷风</p>
+            
+                    </li>
+                </ul>
+            </div>
+        	<div class="i_main_shadow_left"></div>
+            <div class="i_main_shadow_right"></div>
+        </div>
+        
+        <div class="i_main5_all">
+            <div class="i_main5_box">
+                <a href="#"><img src="__PUBLIC__/images/img1/images/images/i_banner_2_03.jpg"></a>
+            </div>
+            <div class="i_main5_left"></div>
+            <div class="i_main5_right"></div>
+        </div>
+        
+        <div class="i_main9_box">
+        	<div class="i_main9_left">
+            	<h3 class="i_main4_gy">最近<span>书单</span><a href="#">更多》</a></h3>
+                <ul>
+                	<li><a href="#"><img src="__PUBLIC__/images/img1/images/images/newmain4_tu1_03.jpg"></a><p><a href="#">11月图书精选</a></p></li>
+                    <li><a href="#"><img src="__PUBLIC__/images/img1/images/images/newmain4_tu1_03.jpg"></a><p><a href="#">11月图书精选</a></p></li>
+                    <li><a href="#"><img src="__PUBLIC__/images/img1/images/images/newmain4_tu1_03.jpg"></a><p><a href="#">11月图书精选</a></p></li>
+                    <li><a href="#"><img src="__PUBLIC__/images/img1/images/images/newmain4_tu1_03.jpg"></a><p><a href="#">11月图书精选</a></p></li>
+                    <li><a href="#"><img src="__PUBLIC__/images/img1/images/images/newmain4_tu1_03.jpg"></a><p><a href="#">11月图书精选</a></p></li>
+                    <li><a href="#"><img src="__PUBLIC__/images/img1/images/images/newmain4_tu1_03.jpg"></a><p><a href="#">11月图书精选</a></p></li>
+                </ul>
+            </div>
+            <div class="i_main9_right">
+            	<p class="i_main9_tit"><img src="__PUBLIC__/images/img1/images/images/i_main9_tu_03.jpg"></p>
+                <dl class="i_main9_12">
+                	<dt>VIP特殊标识</dt>
+                    <dd>过滤广告</dd>
+                </dl>
+                 <dl class="i_main9_34">
+                	<dt>VIP特色书架</dt>
+                    <dd>图书下载</dd>
+                </dl>
+                 <dl class="i_main9_56">
+                	<dt>薪水天天领</dt>
+                    <dd>送月票</dd>
+                </dl>
+                 <dl class="i_main9_78">
+                	<dt>幸运大转盘</dt>
+                    <dd>先睹为快</dd>
+                </dl>
+                <p class="i_main9_hy"><a href="#"></a></p>
+            </div>
+        	<div class="i_main_shadow_left"></div>
+        </div>
+        
+         <div class="i_main10_box">
+        	<div class="i_main10_left">
+            	<h3 class="i_main4_gy">用户<span>吐槽</span><span class="i_main10_sp">创别书城共有 <b>2345123</b> 条书评 丨</span><i>今天生日 丨</i><em>富豪榜</em><a href="#">更多》</a></h3>
+                <dl class="i_main10_pl">
+                	<dt><img src="__PUBLIC__/images/img1/images/images/i_main10_icon3_03.jpg"></dt>
+                    <dd>
+                    <span>东方佛晓</span>  对 <a href="#" class="i_main10_name">《武逆九天》</a>   吐槽道：<a href="#">非常喜欢书中的男主角，期待故常喜欢书中的的男主角，事完结。常喜欢书中的的男主角，期待故事完结。</a>
+                    </dd>
+                </dl>
+                <dl class="i_main10_pl">
+                	<dt><img src="__PUBLIC__/images/img1/images/images/i_main10_icon4_03.jpg"></dt>
+                    <dd>
+                    <span>东方佛晓</span>  对 <a href="#" class="i_main10_name">《武逆九天》</a>   吐槽道：<a href="#">非常喜欢书中的男主角，期待故常喜欢书中的的中的的男主角，期待故事完结。</a>
+                    </dd>
+                </dl>
+                <dl class="i_main10_pl">
+                	<dt><img src="__PUBLIC__/images/img1/images/images/i_main10_icon3_03.jpg"></dt>
+                    <dd>
+                    <span>东方佛晓</span>  对 <a href="#" class="i_main10_name">《武逆九天》</a>   吐槽道：<a href="#">非常喜欢书中的男主主角，中的的男主角，期待故事完结。</a>
+                    </dd>
+                </dl>
+                <dl class="i_main10_pl i_main10_plno">
+                	<dt><img src="__PUBLIC__/images/img1/images/images/i_main10_icon4_03.jpg"></dt>
+                    <dd>
+                    <span>东方佛晓</span>  对 <a href="#" class="i_main10_name">《武逆九天》</a>   吐槽道：<a href="#">非常喜欢书中的男主角，期待故事完结。常喜欢书常喜欢书中的的男主角，中的的男主角，期待故事完结。</a>
+                    </dd>
+                </dl>
+            </div>
+            <div class="i_main10_right">
+            	<h3 class="i_main4_gy i_main10_gy">读者<span>FAQ</span></h3>
+                <P><a href="#">创别相关问题?</a></P>
+                <P><a href="#">创别书城有哪些类型的书？</a></P>
+                <P><a href="#">为什么有部分图书会收费？</a></P>
+                <P><a href="#">我除了看书还能干什么？</a></P>
+                <P><a href="#">如何上传我的图书？有何规范？</a></P>
+                <P><a href="#">如何成为签约作者？</a></P>
+                <P><a href="#">作品的审核流程是怎样的？</a></P>
+                <p class="i_main10_help"><a href="#">收藏分享</a><a href="#">评论作品</a><a href="#">投票评分</a><a href="#">漫画吐槽</a><a href="#">打赏催更</a><a href="#">粉丝团</a></p>
+            </div>
+			<div class="i_main_shadow_right10"></div>
+        </div>
+<!--main11====================================================================================-->
+        <div class="i_main11_box">
+        	<div class="i_main11_left">
+            	<h3 class="i_main4_gy"><span>创谈室</span><i>（创别书城人物访谈栏目）</i><a href="#">更多》</a></h3>
+                <dl class="specila_list">
+                    <dt><a href="#"><img src="images/images/newmain_tu1_03.jpg"></a></dt>
+                    <dd>
+                        <div class="specila_tit"><div><p class="date">第21期</p><p>2013-11-22</p></div><a href="#">李守杰：每个人到底生活在怎样的世界，取决于他对世界的理解。</a></div>
+                        <p class="specila_cet"><a href="#">灿若星辰后归于沉寂，他看到了生命最最亮丽的东西，于是他有格也有权利更出这句话。是啊，一切的痛苦来源皆来自于心灵的不屈桀骜，假如他没有这个我们就没有这样一位才智的伯爵，不会有这么一本书留我们，帮助我们解决那是那么敏感，把自己的内心放置的那般卑微，他看到一篇文的标题叫“你想过个普通人吗？”后，他恐怖得不敢把这篇文章接着读下去独立。 </a></p>
+                    </dd>
+            	</dl>
+            </div>
+            <div class="i_main11_right">
+            	<h3 class="i_main4_gy"><span>往期回顾</span><a href="#">更多》</a></h3>
+                <ul>
+                    <li><a href="#">一草：文学应该具有的东西</a><span>2013-11-23</span></li>
+                    <li><a href="#">一草：文学应该具有的东西</a><span>2013-11-23</span></li>
+                    <li><a href="#">网络上没有知识，有只信息...</a><span>2013-11-23</span></li>
+                    <li><a href="#">一草：文学应该具有的东西</a><span>2013-11-23</span></li>
+                    <li><a href="#">一草：文学应该具有的东西</a><span>2013-11-23</span></li>
+                    <li><a href="#">一草：文学应该具有的东西</a><span>2013-11-23</span></li>
+                </ul>
+            </div>
+			<div class="i_main_shadow_right11"></div>
+        </div>
+        <!--new===== 友情连接====================================-->
+    	<div class="i_main12_box">
+        	<h3 class="i_main4_gy"><span>友情链接</span><i>（商务合作 QQ：394444667）</i><a href="#">更多》</a></h3>
+            <div class="i_main12_link"><a href="#">幻文小说网</a><a href="#">玄幻小说网</a><a href="#">言情小说网</a><a href="#">武侠小说网</a><a href="#">创世小说网</a><a href="#">岳麓小说网</a><a href="#">幻文小说网</a><a href="#">玄幻小说网</a><a href="#">言情小说网</a><a href="#">武侠小说网</a><a href="#">创世小说网</a><a href="#">岳麓小说网</a><a href="#">幻文小说网</a><a href="#">玄幻小说网</a><a href="#">言情小说网</a><a href="#">武侠小说网</a><a href="#">创世小说网</a><a href="#">岳麓小说网</a><a href="#">幻文小说网</a><a href="#">玄幻小说网</a><a href="#">言情小说网</a><a href="#">武侠小说网</a><a href="#">创世小说网</a><a href="#">岳麓小说网</a><a href="#">幻文小说网</a><a href="#">玄幻小说网</a><a href="#">言情小说网</a><a href="#">武侠小说网</a><a href="#">创世小说网</a><a href="#">岳麓小说网</a><a href="#">幻文小说网</a><a href="#">玄幻小说网</a><a href="#">言情小说网</a></div>
+        </div>
+    </div>
+    <div class="i_main13_zone"></div>
+   <div class="i_bottom">
+   		<div class="i_bottom1">
+        	<div class="i_bottom2"><img src="__PUBLIC__/images/img1/images/images/i_logo_03.jpg"></div>
+            <div class="i_bottom3">
+            	<p>版权所有 马鞍山尚文网络科技有限公司</p>
+                <p>浙ICP备13037099号-1</p>
+                <p>© 2013－2014 chuangbie.com, all rights reserved</p>
+                <p>客服  010-87777310 QQ:1113124518</p>
+            </div>
+            <div class="i_bottom3 i_bottom4">
+            	<p>关于创别</p>
+                <p>在创别工作</p>
+                <p>联系我们</p>
+                <p>免责声明</p>
+            </div>
+            <div class="i_bottom5"><img src="__PUBLIC__/images/img1/images/images/i_ewm_03.jpg"></div>
+        </div>
+   </div>
 </body>
-<script type="text/javascript">
-	$(function(){
-		$('.banner').unslider({
-    speed: 500,               //  滚动速度
-    delay: 3000,              //  动画延迟
-    complete: function() {},  //  动画完成的回调函数
-    keys: true,               //  启动键盘导航
-    dots: true,               //  显示点导航
-    fluid: true              //  支持响应式设计
-});
-	})
-</script>
 </html>
+
+
+
+
+
+
+
+   
+  
+
+
+ 
